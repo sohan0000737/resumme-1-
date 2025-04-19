@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Sohan Wileen Arulkar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      width: 95%;
+      margin: 20px auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 5px 0;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      margin: 10px auto;
+      width: 60%;
+      font-size: 16px;
+    }
+    .button-box {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 2px solid black;
+      background-color: #E8F5E9;
+      border-radius: 10px;
+    }
+    .button-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .button-row:last-child {
+      margin-bottom: 0;
+    }
+    .button-row button {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .whatsapp {
+      background-color: #25D366;
+    }
+    .linkedin {
+      background-color: #0077B5;
+    }
+    .twitter {
+      background-color: #1DA1F2;
+    }
+    .download {
+      background-color: rgb(96, 152, 14);
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .left, .right {
+      width: 100%;
+    }
+    .left {
+      background-color: #002815;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .left img {
+      width: 40%;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: block;
+    }
+    .left h2 {
+      color: rgb(255, 255, 255);
+    }
+    .student-box {
+      margin: 10px auto;
+      padding: 8px;
+      width: 40%;
+      border: 2px solid rgb(255, 255, 255);
+      background-color: #c2e0c2;
+      border-radius: 10px;
+      color: black;
+      text-align: center;
+    }
+    .left-box {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 2px solid rgb(255, 255, 255);
+      background-color: #c2e0c2;
+      border-radius: 10px;
+      color: black;
+      text-align: left;
+    }
+    .right-box {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 2px solid rgb(0, 0, 0);
+      background-color: rgb(216, 234, 237);
+      border-radius: 10px;
+      color: black;
+    }
+    .reference-box {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 2px solid black;
+      background-color: rgb(216, 234, 237);
+      border-radius: 10px;
+      color: black;
+    }
+    .skills-bar {
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      width: 80%;
+      height: 30px;
+      margin: 10px auto;
+    }
+    .bar {
+      height: 100%;
+      background-color: #4CAF50;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      color: black;
+    }
+    h2, h3 {
+      color: #000000;
+    }
+    @media (min-width: 768px) {
+      .content {
+        flex-wrap: nowrap;
+      }
+      .left, .right {
+        width: 48%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Resume - Sohan Wileen Arulkar</h1>
+  </header>
+
+  <div class="container">
+    <div class="content">
+      <div class="left">
+        <img src="myphoto.jpg" alt="Profile">
+        <h2>Sohan Wileen Arulkar</h2>
+
+        <div class="student-box">
+          <h3>Student</h3>
+        </div>
+
+        <div class="left-box">
+          <h3>Contact</h3>
+          <p><strong>Phone:</strong> 9665348175</p>
+          <p><strong>Email:</strong> sohanarulkar@gmail.com</p>
+          <p><strong>Address:</strong> Mill colony, Paratwada</p>
+        </div>
+
+        <div class="left-box">
+          <h3>Skills</h3>
+          <p>Python</p>
+          <div class="skills-bar">
+            <div class="bar" style="width:90%;">90%</div>
+          </div>
+          <p>Project management</p>
+          <div class="skills-bar">
+            <div class="bar" style="width:85%;">85%</div>
+          </div>
+        </div>
+
+        <div class="left-box">
+          <h3>Languages</h3>
+          <p>English</p>
+          <p>Hindi</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="button-box">
+          <div class="button-row">
+            <button class="whatsapp" onclick="shareOnWhatsApp()">WhatsApp</button>
+            <button class="linkedin" onclick="shareOnLinkedIn()">LinkedIn</button>
+          </div>
+          <div class="button-row">
+            <button class="twitter" onclick="shareOnTwitter()">Twitter</button>
+            <button class="download" onclick="window.print()">Download Resume</button>
+          </div>
+        </div>
+
+        <div class="right-box">
+          <h3>Career Objective</h3>
+          <p>"As an aspiring web developer passionate about coding, I am building a career in the IT sector by continuously learning new languages and modern frameworks. With a B.Tech background and hands-on experience in Python and full-stack development, I aim to create innovative, user-friendly digital solutions in a collaborative environment."</p>
+        </div>
+
+        <div class="right-box">
+          <h3>Education</h3>
+          <ul>
+            <li><strong>B.Tech</strong> – PRPCEM, 2nd Year – CGPA: 7</li>
+            <li><strong>H.S.C</strong> – Gurukul Jr. College – 63%</li>
+            <li><strong>S.S.C</strong> – Fatima Convent High School – 80%</li>
+          </ul>
+        </div>
+
+        <div class="right-box">
+          <h3>Certifications / Internships</h3>
+          <ul>
+            <li>AI & ML with Python</li>
+            <li>Full Stack Development with Python</li>
+            <li>Web Development</li>
+          </ul>
+        </div>
+
+        <div class="right-box">
+          <h3>Examinations</h3>
+          <p>MHT-CET Score: 73%ile</p>
+        </div>
+
+        <div class="reference-box">
+          <h3>References</h3>
+          <p>Sohan Arulkar – Phone: +91 96653 48175</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function shareOnWhatsApp() {
+      const url = encodeURIComponent(window.location.href);
+      window.open(`https://wa.me/?text=${url}`, '_blank');
+    }
+
+    function shareOnTwitter() {
+      const url = encodeURIComponent(window.location.href);
+      window.open(`https://twitter.com/intent/tweet?text=Check out my resume&url=${url}`, '_blank');
+    }
+
+    function shareOnLinkedIn() {
+      const url = encodeURIComponent(window.location.href);
+      window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${url}`, '_blank');
+    }
+  </script>
+</body>
+</html>
